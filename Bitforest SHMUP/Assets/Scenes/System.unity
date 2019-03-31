@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 547083828}
   - component: {fileID: 547083827}
   - component: {fileID: 547083830}
+  - component: {fileID: 547083826}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -225,6 +226,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &547083826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547083825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e80c6d1f0400b419078f6800c57dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Min: 3
+  Max: 6
+  SpawnYMargin: 1
+  PowerUps:
+  - {fileID: 331330079034344097, guid: 18d1aae569d0a5046a0b504178807f7a, type: 3}
 --- !u!114 &547083827
 MonoBehaviour:
   m_ObjectHideFlags: 0

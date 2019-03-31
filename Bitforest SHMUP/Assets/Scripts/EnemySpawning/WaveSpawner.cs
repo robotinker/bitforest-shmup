@@ -6,36 +6,36 @@ using UnityEngine;
 
 public class WaveSpawner : AppResourceMonoBehaviour
 {
-    public float SpawnYMargin = 1;
-    public WaveSchedule Schedule;
+  public float SpawnYMargin = 1;
+  public WaveSchedule Schedule;
 
-    public Action OnLevelComplete;
+  public Action OnLevelComplete;
 
-    List<GameObject> EnemiesSpawned = new List<GameObject>();
+  List<GameObject> EnemiesSpawned = new List<GameObject>();
 
-    public void Start()
+  public void Start()
+  {
+    StartCoroutine(SpawnRoutine());
+  }
+
+  IEnumerator SpawnRoutine()
+  {
+    foreach (var wave in Schedule.Waves)
     {
-        StartCoroutine(SpawnRoutine());
-    }
-
-    IEnumerator SpawnRoutine()
-    {
-        foreach (var wave in Schedule.Waves)
+      yield return new WaitForSeconds(wave.Delay);
+      var worldWidth = ScreenTopRight.x - ScreenBottomLeft.x;
+      var x = ScreenBottomLeft.x + worldWidth * wave.SpawnLocation;
+      var y = ScreenTopRight.y + SpawnYMargin;
+      var newFormation = Instantiate(wave.Formation, new Vector3(x, y, 0f), Quaternion.identity);
+      foreach (var t in newFormation.GetComponentsInChildren<Transform>())
+      {
+        if (t.gameObject.layer == LayerMask.NameToLayer(LayerNameEnemy))
         {
-            yield return new WaitForSeconds(wave.Delay);
-            var worldWidth = ScreenTopRight.x - ScreenBottomLeft.x;
-            var x = ScreenBottomLeft.x + worldWidth * wave.SpawnLocation;
-            var y = ScreenTopRight.y + SpawnYMargin;
-            var newFormation = Instantiate(wave.Formation, new Vector3(x, y, 0f), Quaternion.identity);
-            foreach (var t in newFormation.GetComponentsInChildren<Transform>())
-            {
-                if (t.gameObject.layer == LayerMask.NameToLayer(LayerNameEnemy))
-                {
-                    EnemiesSpawned.Add(t.gameObject);
-                }
-            }
+          EnemiesSpawned.Add(t.gameObject);
         }
-        yield return new WaitUntil(() => !EnemiesSpawned.Any(x => x != null));
-        OnLevelComplete?.Invoke();
+      }
     }
+    yield return new WaitUntil(() => !EnemiesSpawned.Any(x => x != null));
+    OnLevelComplete?.Invoke();
+  }
 }
