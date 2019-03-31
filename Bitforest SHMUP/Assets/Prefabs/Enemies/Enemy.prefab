@@ -65,7 +65,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2155322399324180939}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f13937c58d408ad49b0067a9a72421a1, type: 3}
   m_Name: 
@@ -267,6 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8585026954404760888}
   - component: {fileID: 1818124938714282600}
+  - component: {fileID: 3074494813908121606}
   m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
@@ -304,6 +305,18 @@ MonoBehaviour:
     type: 3}
   LaunchSpeed: 5
   Cooldown: 0.4
+--- !u!114 &3074494813908121606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523983513082035027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2d9328249ff45c1bac99ce1a3a96f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5825273911422056532
 GameObject:
   m_ObjectHideFlags: 0
