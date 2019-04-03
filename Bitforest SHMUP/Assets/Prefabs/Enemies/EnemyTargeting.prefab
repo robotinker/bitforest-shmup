@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 8060882412089129808}
   - component: {fileID: 3780712704689597710}
   m_Layer: 9
-  m_Name: Enemy
+  m_Name: EnemyTargeting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,9 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0a4cc820da7a547be3e509414a78db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectile: {fileID: 2311906539307597963, guid: 1862e9b55fbbb1043be69061e5c059d1,
+  Projectile: {fileID: 2311906539307597963, guid: 8b4f2eb0e22e3406596b3192630300ee,
     type: 3}
-  targeting: 0
   LaunchSpeed: 4
   Cooldown: 0.8
 --- !u!1 &5825273911422056532
@@ -420,7 +419,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4e92be3e65896941a330345a620e5fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67a421a365604c545b6b8c10758713f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
