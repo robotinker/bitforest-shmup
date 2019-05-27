@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3780712704689597710}
   m_Layer: 9
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Projectile: {fileID: 2311906539307597963, guid: 1862e9b55fbbb1043be69061e5c059d1,
     type: 3}
-  targeting: 0
   LaunchSpeed: 4
   Cooldown: 0.8
 --- !u!1 &5825273911422056532

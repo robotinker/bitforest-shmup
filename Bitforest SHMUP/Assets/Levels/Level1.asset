@@ -17,15 +17,15 @@ MonoBehaviour:
       type: 3}
     Delay: 0
     SpawnLocation: 0.5
-  - Formation: {fileID: 6255629524150160956, guid: 610c37010bc08408fad774356784810a,
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 2
     SpawnLocation: 0.2
-  - Formation: {fileID: 6255629524150160956, guid: 8a55dad1024414c10b40aa64fdcf3b4d,
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 2
     SpawnLocation: 0.5
-  - Formation: {fileID: 6255629524150160956, guid: 610c37010bc08408fad774356784810a,
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 2
     SpawnLocation: 0.8

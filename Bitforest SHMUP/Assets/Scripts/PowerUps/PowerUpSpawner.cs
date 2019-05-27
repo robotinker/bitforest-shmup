@@ -26,5 +26,4 @@ public class PowerUpSpawner : AppResourceMonoBehaviour
 
     StartCoroutine(SpawnRoutine());
   }
-
 }
