@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   Waves:
-  - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 0
     SpawnLocation: 0.5
-  - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 2
-    SpawnLocation: 0.267
-  - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
+    SpawnLocation: 0.2
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
       type: 3}
     Delay: 2
-    SpawnLocation: 0.797
+    SpawnLocation: 0.5
+  - Formation: {fileID: 1093875712304275666, guid: 3257c57577bb9c44abeb4ff8d6211344,
+      type: 3}
+    Delay: 2
+    SpawnLocation: 0.8
   - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
       type: 3}
     Delay: 4
-    SpawnLocation: 0.499
-  - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
-      type: 3}
-    Delay: 2
     SpawnLocation: 0.252
   - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
       type: 3}
     Delay: 0
-    SpawnLocation: 0.747
+    SpawnLocation: 0.84
   - Formation: {fileID: 6255629524150160956, guid: 4227120f46a4b6f409e0394d2d620dd9,
       type: 3}
     Delay: 3
